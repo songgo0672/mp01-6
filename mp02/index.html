@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     * {margin: 0; padding: 0;}
+        .page {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            height: 88px;
+        }
+        aside{
+            width: 200px; height: 300px;
+            float: left;
+        }
+        main{ 
+            width : 800px; height: 780px;
+            margin-left: 200px;   
+        }
+        #clear{
+            clear:both;
+        }
+        footer{
+            height: 90px;
+        }
+        /*-------------레이아웃---------------------*/
+        ul{
+            list-style-type: none;
+        }
+        #logo{
+            margin: 10px 0 0 20px;
+            float: left;
+            
+        }
+        #main_menu{
+            margin-top : 40px;
+            margin-left: 40px;
+            float: left;
+        }
+        #menu01{
+            float: right;
+            margin-top: -70px; 
+            font-size: small;
+            margin-right: 40px;
+            background-image:url('images/magnifying-glass.gif');
+            
+        }
+        #menu01 li{
+            display: inline;
+            margin-right: 10px;
+            
+        }
+        #member{
+            width: 200px;      
+            height: 110px;      
+            border-radius: 15px;
+            background-color: ghostwhite;
+            margin-top: 25px;
+        }
+        #memlog{
+            margin-left: 10px;
+            margin-bottom: 5px;
+            margin-top:20px;
+        }
+        #id ,#pw{
+            margin-left: 10px;
+            float: left;
+            margin-top: 2px;
+        }
+        #btnlog{
+            margin-left: 5px;
+            margin-top:3px;
+        }    
+        #btnjoin,#btn_search{
+            margin-left: 10px;
+            float: left;
+            margin-top: 10px;
+        }
+        #guest{ width: 200px;      
+            height: 110px;      
+            border-radius: 15px;
+            background-color: ghostwhite;
+            margin-top: 30px;
+        }
+        #ttl_memo{
+            margin: 5px 0 0 15px;
+        }
+        #line1{
+            width: 180px;
+            margin: 0 auto;
+        }
+        #guest > ul > li{
+            font-size: 13px;
+            margin-left: 15px;
+        }
+        
+        
+        /*--------------좌측 -----------------------------*/
+        #main_img{
+            margin:20px 20px 5px 20px
+        }    
+        #latest11{
+            width: 400px;
+            height: 100px;
+            float: left;
+        }
+        #latest1{
+            float: left;
+            margin :0 0 2px 20px;
+        }
+        #more1{
+            float: right;
+        }
+        #line2{
+            width: 400px;
+            margin-top: 3px;
+        }
+        #book_pen{
+            margin: 10px 0 0 30px;
+            float: left;
+        }
+        #clear{
+            clear: both;
+        }
+        #text01{
+            font-size: small;
+            float: left;
+            padding: 6px;
+            margin-left: 10px;
+        }
+        #text01 li{
+            padding: 1px;
+        }
+        #text02{
+            font-size: small;
+            margin-left: 300px;
+            margin-top: 4px;
+        }
+        #text02 li{
+            padding : 1px;
+            margin-left: 25px;
+        }
+        #youtube{
+            width: 390px;
+            height: 250px;
+            float: right;         
+        }
+        #latest3{
+            float: left;
+            margin :0 0 2px 20px;
+        }
+        #more2{
+            float: right;
+            margin-right: 20px;
+        }
+        #line3{
+            width: 350px;
+            margin-bottom : 3px;
+            margin-left: 20px;
+            float: left;
+        }
+        #bach{
+            margin-left: 70px;
+        }
+        #freewrite{
+            margin-top: 20px;
+            width: 400px;
+            float: left;  
+        }
+        #latest2{
+            float: left;
+            margin-left: 20px;
+        }
+        #more3{
+            float: right;
+        }
+        #line4{
+            width: 400px;
+        }
+        #text03{
+            font-size: small;
+            float: left;
+            padding: 6px;
+            margin-left: 10px;
+        }
+        #text03 li{
+            padding: 1px;
+        }
+        #text04{
+            font-size: small;
+            margin-left: 300px;
+            margin-top: 4px;
+            
+        }
+        #text04 li{
+            padding : 1px;
+            margin-left: 25px;
+        }
+        #photo{
+            width: 800px;
+            float: left;
+            height: 200px;
+        }
+        #latest4{
+            margin-left: 20px;
+        }
+        #photocol{
+            width: 750px;
+            height: 190px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            margin-left: 25px;
+            
+        }
+        #photocol li{
+            float: left;
+            padding : 20px;
+            margin-left: 20px;
+            font-size: small;
+            text-align: center;
+        }
+        #line5{
+            width: 1000px;
+            border: 1px solid grey;
+        }
+        #logo_footer{
+            float: left;
+            margin-left: 230px;
+            margin-top: 10px;
+        }
+        #text1{
+            float: left;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        #box{
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        
+       
+
+      
+      
+</style>
+
+<body>
+    <div class ="page">
+        <header>
+            <img id="logo" src="/mp02/img/logo.png">
+                <div class="container">
+                    <img id="main_menu" src="/mp02/img/main_menu_bg.png">
+                    <div class="freeboard">자유게시판</div>
+                    <div class="freeboard1">기타 연주</div>
+                    <div class="freeboard2">공동 구매</div>
+                    <div class="freeboard3">연주회 안내</div>
+                    <div class="freeboard4">회원 게시판</div>
+                </div>
+        </div>
+            <ul id="menu01">
+                <li>HOME |</li>
+                <li>LOGIN |</li>
+                <li>JOIN |</li>
+                <li>NOTICE</li>
+            </ul>
+        </header>
+        <aside>
+            <div id="member">
+                <img id="memlog" src="/mp02/img/ttl_login.png">
+                <div id="id"><input type="text" size="10"></div>
+                <div id="pw"><input type="text" size="10"></div>
+                <div id= "clear1"></div>
+                <img id="btnlog" src="/mp02/img/btn_login.gif">
+                <img id="btnjoin" src="/mp02/img/btn_join.gif">
+                <img id="btn_search" src="/mp02/img/btn_search.gif">
+            </div>
+            <div id="guest">
+                <img id="ttl_memo" src="/mp02/img/ttl_memo.gif">
+                <hr id="line1">
+                <ul>
+                    <li><img id="dot" src="/mp02/img/icon_blue.gif" ><span>안녕하세요!</span></li>
+                    <li><img id="dot" src="/mp02/img/icon_blue.gif" ><span>안녕하세요!</span></li>
+                    <li><img id="dot" src="/mp02/img/icon_blue.gif" ><span>안녕하세요!</span></li>
+                    <li><img id="dot" src="/mp02/img/icon_blue.gif" ><span>안녕하세요!</span></li>
+                </ul>
+                
+            </div>
+        </aside>
+        <main> 
+            <div id="main">
+                <img id="main_img" src="/mp02/img/main_img.png">
+                <div id="latest11">
+                    <img id="latest1" src="/mp02/img/latest1.gif">
+                    <img id="more1" src="/mp02/img/more.gif">
+                    <hr id="line2">
+                    <img id="book_pen" src="/mp02/img/book_pen.gif">
+                    <div class ="clear"></div>
+                    <ul id="text01">
+                        <li><p>루바토 개편과 사이트 이용...</p></li>
+                        <li><p>루바토 개편과 사이트 이용...</p></li>
+                        <li><p>루바토 개편과 사이트 이용...</p></li>
+                        <li><p>루바토 개편과 사이트 이용...</p></li>
+                    </ul>
+                    
+                    <ul id="text02">
+                        <li><p>2017-09-20</p></li>
+                        <li><p>2017-09-20</p></li>
+                        <li><p>2017-09-20</p></li>
+                        <li><p>2017-09-20</p></li>
+                    </ul>
+                </div>
+                <div id="youtube">
+                <img id="latest3" src="/mp02/img/latest3.gif">
+                <img id="more2" src="/mp02/img/more.gif">
+                <hr id="line3">
+                
+                <img id="bach" src="/mp02/img/bach.jpg">
+                </div>
+                <div id="freewrite">
+                    <img id="latest2" src="/mp02/img/latest2.gif">
+                    <img id="more3" src="/mp02/img/more.gif">
+                    <hr id="line4">
+                    <img id="book_pen" src="/mp02/img/book_pen.gif">
+                    <ul id="text03">
+                        <li><p>까스릉님의 선물인 보드카...</p></li>
+                        <li><p>까스릉님의 선물인 보드카...</p></li>
+                        <li><p>까스릉님의 선물인 보드카...</p></li>
+                        <li><p>까스릉님의 선물인 보드카...</p></li>
+                    </ul>
+                    
+                    <ul id="text04">
+                        <li><p>2017-09-20</p></li>
+                        <li><p>2017-09-20</p></li>
+                        <li><p>2017-09-20</p></li>
+                        <li><p>2017-09-20</p></li>
+                    </ul>
+
+
+                </div> 
+                <div id="photo">
+                    <img id="latest4" src="/mp02/img/latest4.gif">
+                    <div id ="photocol">
+                        <ul>
+                            <li><img  src="/mp02/img/img1.jpg"style="display:block;">기타 페스티벌 4중주</li> 
+                            <li><img  src="/mp02/img/img1.jpg"style="display:block;">기타 페스티벌 4중주</li>
+                            <li><img  src="/mp02/img/img1.jpg"style="display:block;">기타 페스티벌 4중주</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>    
+        </main>
+        <div id= "clear"></div>
+        <footer>
+            <hr id="line5">
+            <div id="bottom">
+                <img id="logo_footer" src="/mp02/img/logo_footer.gif">
+                <div id="text1">
+                    <p>서울시 강남구 삼성동 1234 우 : 123-1234<br>
+                        TEL : 031-123-1234 Email : email@domain.com<br>
+                        COPYRIGHT (C) 루바토 ALL RIGHTS RESERVEID
+                    </p>
+                </div>
+                <div id="box">
+                    <ul>
+                        <img src="/mp02/img/twitter.gif">
+                        <img src="/mp02/img/facebook.gif">
+                        <img src="/mp02/img/blog.gif">
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
